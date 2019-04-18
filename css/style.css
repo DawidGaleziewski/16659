@@ -10,6 +10,19 @@
     width: 100%;
 }
 
+.wrapper__description {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 40%;
+    left: -1%;
+    width: 100%;
+
+}
+
 .wrapper::before{
     
     position: absolute;
@@ -29,7 +42,7 @@
     border-color: black;
     width: calc(100% + 10px);
     left: -10px;
-    height: 30%;
+    height: 55%;
     transition: width 3s linear 0s, left 3s linear 0s, height 3s linear 3s;
 }
 
@@ -51,7 +64,7 @@
     border-color: black;
     width: calc(100% + 10px);
     left: -10px;
-    height: 30%;
+    height: 55%;
     transition: width 3s linear 0s, left 3s linear 0s, height 3s linear 3s;
 }
 
