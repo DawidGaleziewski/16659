@@ -1,0 +1,50 @@
+.wrapper {
+    position: relative;
+    width: 80vw;
+    margin: 10rem auto;
+}
+
+.image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.wrapper::before{
+    
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border-top: 5px solid #000;
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+    top: -10px;
+    left: 50%;
+    z-index: -1;
+    border-color: white;
+}
+
+.wrapper::after{
+    
+    position: absolute;
+    content: '';
+    width: calc(100% + 10px);
+    height: 30%;
+   
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    bottom: -10px;
+    left: -10px;
+    z-index: -1;
+}
+
+.wrapper:hover::before{
+    border-color: black;
+    width: calc(100% + 10px);
+    left: -10px;
+    height: 30%;
+    transition: width 3s linear 0s, left 3s linear 0s, height 3s linear 3s;
+}
+
