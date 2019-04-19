@@ -13,14 +13,21 @@
 .wrapper__description {
     background-color: black;
     color: white;
+    opacity: 0;
     text-transform: uppercase;
     text-align: center;
     padding: 5px;
     position: absolute;
-    top: 40%;
-    left: -1%;
-    width: 100%;
+    top: 44%;
+    left: -10px;
+    width: calc(100% + 10px);
+    font-size: 2rem;
 
+}
+
+.wrapper:hover .wrapper__description {
+    opacity: 0.7;
+    transition: opacity 3s linear 0s;
 }
 
 .wrapper::before{
